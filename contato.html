@@ -21,6 +21,68 @@
     </header>
     <main>
       <h1>Contato</h1>
+      <p>Quer falar com a equipe do Lendas do Octógono? Use os dados abaixo ou envie uma mensagem pelo formulário. Todas as informações desta página são fictícias.</p>
+
+      <section>
+        <h2>Onde estamos</h2>
+        <address>
+          Lendas do Octógono<br>
+          Rua dos Campeões, 123 - Centro<br>
+          Joinville - SC, 89200-000<br>
+          E-mail: <a href="mailto:contato@lendas-do-octogono.example">contato@lendas-do-octogono.example</a><br>
+          Telefone: <a href="tel:+554799999999">(47) 9999-9999</a>
+        </address>
+        <p><a href="https://www.google.com/maps/place/Joinville,+SC" target="_blank" rel="noopener noreferrer">Ver Joinville no Google Maps</a></p>
+      </section>
+
+      <section>
+        <h2>Horário de atendimento</h2>
+        <dl>
+          <dt>Segunda a sexta</dt>
+          <dd>8h às 18h</dd>
+          <dt>Sábado</dt>
+          <dd>9h às 13h</dd>
+          <dt>Domingo</dt>
+          <dd>Fechado</dd>
+        </dl>
+      </section>
+
+      <section>
+        <h2>Envie uma mensagem</h2>
+        <form action="#" method="post">
+          <p>
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" autocomplete="name" required>
+          </p>
+
+          <p>
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" autocomplete="email" required>
+          </p>
+
+          <p>
+            <label for="assunto">Assunto</label>
+            <select id="assunto" name="assunto" required>
+              <option value="">Selecione...</option>
+              <option value="duvida">Dúvida</option>
+              <option value="sugestao">Sugestão</option>
+              <option value="elogio">Elogio</option>
+              <option value="outro">Outro assunto</option>
+            </select>
+          </p>
+
+          <p>
+            <label for="mensagem">Mensagem</label>
+          </p>
+          <p>
+            <textarea id="mensagem" name="mensagem" rows="6" cols="40" required></textarea>
+          </p>
+
+          <p>
+            <button type="submit">Enviar mensagem</button>
+          </p>
+        </form>
+      </section>
     </main>
     <footer>
       <p>Lucas Corrêa Tomm - DSM3 2025 - 2026</p>
