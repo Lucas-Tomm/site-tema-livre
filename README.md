@@ -67,8 +67,6 @@ Ao pesquisar as lutas da tabela, vi que o round de Anderson Silva x Rich Frankli
 
 Também tive que evitar o `<br>` para quebrar as linhas do endereço, porque a regra do desafio não permite. Troquei por um `<p>` por linha dentro do `<address>`.
 
-Instalar o GitHub CLI não funcionou no computador da escola (erro 1603 do instalador). Por isso criei o repositório pelo site do GitHub e liguei como origin.
-
 O Lighthouse também não pôde ser usado, pelo mesmo motivo de permissão.
 
 ## Fontes consultadas
