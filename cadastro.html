@@ -21,6 +21,111 @@
     </header>
     <main>
       <h1>Cadastro</h1>
+      <p>Preencha a ficha abaixo para se cadastrar como torcedor do octógono. Os campos obrigatórios estão indicados com um asterisco (*). Use apenas dados fictícios.</p>
+
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Dados pessoais</legend>
+
+          <p>
+            <label for="nome">Nome completo *</label>
+            <input type="text" id="nome" name="nome" autocomplete="name" required>
+          </p>
+
+          <p>
+            <label for="email">E-mail *</label>
+            <input type="email" id="email" name="email" autocomplete="email" required>
+          </p>
+
+          <p>
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" name="telefone" autocomplete="tel">
+          </p>
+
+          <p>
+            <label for="nascimento">Data de nascimento *</label>
+            <input type="date" id="nascimento" name="nascimento" required>
+          </p>
+
+          <p>
+            <label for="altura">Altura em metros</label>
+            <input type="number" id="altura" name="altura" min="1.00" max="2.50" step="0.01">
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Preferências sobre os lutadores</legend>
+
+          <fieldset>
+            <legend>Quem é o melhor de todos? *</legend>
+            <p>
+              <input type="radio" id="melhor-jones" name="melhor" value="jon-jones" required>
+              <label for="melhor-jones">Jon Jones</label>
+            </p>
+            <p>
+              <input type="radio" id="melhor-gsp" name="melhor" value="georges-st-pierre" required>
+              <label for="melhor-gsp">Georges St-Pierre</label>
+            </p>
+            <p>
+              <input type="radio" id="melhor-anderson" name="melhor" value="anderson-silva" required>
+              <label for="melhor-anderson">Anderson Silva</label>
+            </p>
+          </fieldset>
+
+          <p>
+            <label for="lutas-assistidas">Quantas lutas de UFC você já assistiu?</label>
+            <input type="number" id="lutas-assistidas" name="lutas-assistidas" min="0" max="500">
+          </p>
+
+          <p>
+            <label for="categoria">Categoria de peso favorita *</label>
+            <select id="categoria" name="categoria" required>
+              <option value="">Selecione...</option>
+              <option value="meio-medio">Meio-médio</option>
+              <option value="medio">Médio</option>
+              <option value="meio-pesado">Meio-pesado</option>
+              <option value="pesado">Pesado</option>
+            </select>
+          </p>
+
+          <fieldset>
+            <legend>Que tipo de conteúdo você quer receber?</legend>
+            <p>
+              <input type="checkbox" id="conteudo-historia" name="conteudo" value="historia">
+              <label for="conteudo-historia">Histórias de carreira</label>
+            </p>
+            <p>
+              <input type="checkbox" id="conteudo-lutas" name="conteudo" value="lutas">
+              <label for="conteudo-lutas">Resultados de lutas</label>
+            </p>
+            <p>
+              <input type="checkbox" id="conteudo-curiosidades" name="conteudo" value="curiosidades">
+              <label for="conteudo-curiosidades">Curiosidades</label>
+            </p>
+          </fieldset>
+        </fieldset>
+
+        <fieldset>
+          <legend>Mensagem e termos</legend>
+
+          <p>
+            <label for="mensagem">Deixe uma mensagem (até 300 caracteres)</label>
+          </p>
+          <p>
+            <textarea id="mensagem" name="mensagem" rows="5" cols="40" maxlength="300"></textarea>
+          </p>
+
+          <p>
+            <input type="checkbox" id="termos" name="termos" value="aceito" required>
+            <label for="termos">Li e aceito os termos de uso *</label>
+          </p>
+        </fieldset>
+
+        <p>
+          <button type="submit">Enviar cadastro</button>
+          <button type="reset">Limpar</button>
+        </p>
+      </form>
     </main>
     <footer>
       <p>Lucas Corrêa Tomm - DSM3 2025 - 2026</p>
